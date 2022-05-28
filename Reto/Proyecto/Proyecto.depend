@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1653762528 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\episodio.cpp
+	"Episodio.h"
+
+1653762528 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
+	<iostream>
+
+1653762625 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
+	"Pelicula.h"
+
+1653762640 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\pelicula.h
+	<iostream>
+	"Video.h"
+
+1653762711 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
+	<stdio.h>
+	<string>
+
