@@ -13,10 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-<<<<<<< HEAD
 					<Add directory="include" />
-=======
->>>>>>> cd955adcad95d863576901d53e3bd073ffcb37b2
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -26,10 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-<<<<<<< HEAD
 					<Add directory="include" />
-=======
->>>>>>> cd955adcad95d863576901d53e3bd073ffcb37b2
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,12 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-<<<<<<< HEAD
 		<Unit filename="include/Episodio.h" />
-<<<<<<< Updated upstream
-		<Unit filename="main.cpp" />
-		<Unit filename="src/Episodio.cpp" />
-=======
 		<Unit filename="include/Pelicula.h" />
 		<Unit filename="include/Serie.h" />
 		<Unit filename="include/Video.h" />
@@ -54,10 +43,6 @@
 		<Unit filename="src/Pelicula.cpp" />
 		<Unit filename="src/Serie.cpp" />
 		<Unit filename="src/Video.cpp" />
->>>>>>> Stashed changes
-=======
-		<Unit filename="main.cpp" />
->>>>>>> cd955adcad95d863576901d53e3bd073ffcb37b2
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
