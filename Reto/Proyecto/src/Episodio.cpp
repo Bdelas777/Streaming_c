@@ -3,9 +3,9 @@
 //Constructores
 Episodio::Episodio()
 {
-    titulo="Una nueva esperanza";
-    temporada=2;
-    calificacion=7;
+    titulo = "Una nueva esperanza";
+    temporada = 2;
+    calificacion = 7;
 }
 
 Episodio::Episodio(string _titulo,int _temporada,int _calificacion)
