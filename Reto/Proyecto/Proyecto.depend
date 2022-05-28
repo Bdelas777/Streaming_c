@@ -5,25 +5,25 @@
 1653764036 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
 	<iostream>
 
-1653763128 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
+1653764093 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
 	"Pelicula.h"
 
-1653763128 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\pelicula.h
+1653764093 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\pelicula.h
 	<iostream>
 	"Video.h"
 
-1653763128 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
+1653764093 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
 	<stdio.h>
 	<string>
 
-1653763128 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\serie.cpp
+1653764093 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\serie.cpp
 	"Serie.h"
 
-1653763128 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
+1653764093 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
 	"Video.h"
 	<string>
 
-1653763128 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\serie.h
+1653764093 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\serie.h
 	"Episodio.h"
 	"Video.h"
 
