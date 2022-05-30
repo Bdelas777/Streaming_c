@@ -26,7 +26,7 @@ class Video
 		double getCalificacion();
 
 		// Otros Metodos
-		string str();
+		virtual string str();
 
 	protected:
 		string iD;

@@ -12,7 +12,7 @@
 	<iostream>
 	"Video.h"
 
-1653764093 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
+1653928256 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
 	<stdio.h>
 	<string>
 
@@ -27,7 +27,7 @@
 	"Episodio.h"
 	"Video.h"
 
-1653763144 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
+1653928724 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
 	<iostream>
 	"Video.h"
 	"Pelicula.h"
