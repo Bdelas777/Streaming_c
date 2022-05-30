@@ -20,7 +20,7 @@ int main()
 	cout<<peli1.str()<<endl<<peli2.str()<<endl;
 
 	//Clase episodio
-	cout<<"Ejemplos de clase video con y sin parametros: "<<endl;
+	cout<<"Ejemplos de clase episodio con y sin parametros: "<<endl;
 	Episodio episodio1("Coronacion",1,10);
 	Episodio episodio2("La caida",4,8);
 	Episodio episodio3;
