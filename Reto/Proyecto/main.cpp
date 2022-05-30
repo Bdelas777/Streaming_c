@@ -40,6 +40,12 @@ int main()
 	cout<<"Ejemplo de salida de clase serie : "<<endl;
 	cout<<serie1.str()<<endl;
 
-
+	// Declaracion de un arreglo de apuntadores de clase Video
+	Video *arrPtrVideos[]= {&video1, &video2 , &serie1,&peli1};
+	cout<<"Salida de direcciones de memoria:"<<endl;
+	for (int index=0;index<4;index++){
+		cout<<arrPtrVideos[index]<<endl;
+		cout<<arrPtrVideos[index]->str()<<endl;
+	}
     return 0;
 }
