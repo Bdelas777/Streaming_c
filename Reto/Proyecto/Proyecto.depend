@@ -27,10 +27,20 @@
 	"Episodio.h"
 	"Video.h"
 
-1653928724 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
+1654097848 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
 	<iostream>
 	"Video.h"
 	"Pelicula.h"
 	"Episodio.h"
 	"Serie.h"
+	"Peliculas.h"
+
+1654097383 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\peliculas.cpp
+	"Peliculas.h"
+	<fstream>
+	<sstream>
+	"Pelicula.h"
+
+1654055509 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\peliculas.h
+	"Pelicula.h"
 

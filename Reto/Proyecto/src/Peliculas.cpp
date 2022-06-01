@@ -25,10 +25,11 @@ Pelicula * Peliculas::getPtrPelicula(string _Id)
 {
 	for(int index=0;index<cantidad;index++){
 			if(arrPtrPeliculas[index]->getId()==_Id)
-				return  arrPtrPeliculas[index];
-			else
+				return arrPtrPeliculas[index];
+			else if (index==35)
 				return nullptr;
 	}
+
 }
 int Peliculas::getCantidadPeliculas()
 {
@@ -52,20 +53,20 @@ void Peliculas::leerArchivo()
 			row[iR++]=word;
 		}
 		arrPtrPeliculas[cantidad]= new Pelicula(row[0],row[1] ,stoi(row[2]),row[3],stod(row[4]),stoi(row[5]));
-		cout << "Id: "<< row[0] << "\n";
+		/*cout << "Id: "<< row[0] << "\n";
 		cout << "Titulo: "<< row[1] << "\n";
 		cout << "Duracion: "<< row[2] << "\n";
 		cout << "Genero: "<< row[3] << "\n";
 		cout << "Calificacion: "<< row[4] << "\n";
 		cout << "Oscares: "<< row[5] << "\n";
-		cout <<"Dentro del objeto: "<< arrPtrPeliculas[cantidad]->str() << endl;
+		cout <<"Dentro del objeto: "<< arrPtrPeliculas[cantidad]->str() << endl;*/
 		cantidad= cantidad +1;
 
 	}
 	fin.close();
-	for(int iR=0;iR<cantidad;iR++){
+	/*for(int iR=0;iR<cantidad;iR++){
 		cout<< iR << "-"<< arrPtrPeliculas[iR]->str()<<endl;
-	}
+	}*/
 }
 void Peliculas::reporteTodasLasPeliculas()
 {

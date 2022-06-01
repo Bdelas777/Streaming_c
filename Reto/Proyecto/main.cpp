@@ -3,6 +3,7 @@
 #include "Pelicula.h"
 #include "Episodio.h"
 #include "Serie.h"
+#include "Peliculas.h"
 using namespace std;
 
 int main()
@@ -40,12 +41,20 @@ int main()
 	cout<<"Ejemplo de salida de clase serie : "<<endl;
 	cout<<serie1.str()<<endl;
 
-	// Declaracion de un arreglo de apuntadores de clase Video
+	/*// Declaracion de un arreglo de apuntadores de clase Video
 	Video *arrPtrVideos[]= {&video1, &video2 , &serie1,&peli1};
 	cout<<"Salida de direcciones de memoria:"<<endl;
 	for (int index=0;index<4;index++){
 		cout<<arrPtrVideos[index]<<endl;
 		cout<<arrPtrVideos[index]->str()<<endl;
-	}
+	}*/
+	Peliculas pelis;
+	//pelis.leerArchivo();
+	//cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
+	//cout<<pelis.getPtrPelicula("130");
+	//pelis.reportePorCalificacion(9.4);
+	//pelis.reporteGenero("Drama");
+	//pelis.reporteTodasLasPeliculas();
+
     return 0;
 }
