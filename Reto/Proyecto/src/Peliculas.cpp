@@ -1,10 +1,13 @@
 #include "Peliculas.h"
-
+#include<fstream>
+#include<iostream>
+using namespace std;
 //Constructores
 Peliculas::Peliculas(){
 }
 //Setters
 void Peliculas::setPtrPelicula(Pelicula *_pelicula){
+	string row[6];
 	arrPtrPeliculas[cantidad]= new Pelicula(row[0],row[1],row[2],row[3],row[4],row[5]);
 	cantidad=cantidad+1;
 }
@@ -16,7 +19,7 @@ void Peliculas::setCantidadPeliculas(int _cantidad){
 //Getters
 Pelicula * Peliculas::getPtrPelicula(string _Id){
 	for(int i=0;i<cantidad;i++){
-		if(Pelicula[i][1]==calificacion)
+		if(Peliculas[i][1]==_Id)
     {
         return arrPtrPeliculas[i]->str;
     }
@@ -25,7 +28,6 @@ Pelicula * Peliculas::getPtrPelicula(string _Id){
 	}
 }
 
-}
 int Peliculas::getCantidadPeliculas(){
 	return cantidad;
 }
@@ -60,12 +62,15 @@ void Peliculas::leerArchivo(){
 }
 
 void Peliculas::reporteTodasLasPeliculas(){
-	/*double acumulado=0;
+	double acumulado=0;
     for(int index=0; index<cantidad; index++)
     {
-        acumulado = acumulado + Pelicula[index];
-    }*/
-    return Peliculas;
+        acumulado = acumulado + Pelicula[index].getCalificacion();
+    }
+    for(int i=0;i<cantidad;i++){
+			cout<<arrPtrPeliculas->str<<endl;
+	}
+	cout<<acumulado<<endl;
 
 }
 void Peliculas::reportePorCalificacion(double calificacion){

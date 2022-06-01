@@ -1,9 +1,13 @@
 #ifndef PELICULAS_H
 #define PELICULAS_H
+
 #include"Pelicula.h"
-const int MAX_PEL = 50; // constante
-class Peliculas
-{
+
+const int  MAX_PEL = 50; // constante
+class Peliculas{
+	private://atributos
+		Pelicula *arrPtrPeliculas[MAX_PEL];
+		int cantidad;
 	public:// Metodos
 		//Constructores
 		Peliculas();
@@ -21,10 +25,6 @@ class Peliculas
 		void reportePorCalificacion(double _calificacion);
 		void reporteGenero(string genero);
 
-
-
-	private://atributos
-		Pelicula *arrPtrPeliculas[MAX_PEL];
-		int cantidad;
-}
+};
 #endif // PELICULAS_H
+

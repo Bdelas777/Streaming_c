@@ -25,8 +25,6 @@ public:
     //Otros Metodos
     double calculaCalPromedio();
     string str();
-
-
 };
 
 #endif // SERIE_H
