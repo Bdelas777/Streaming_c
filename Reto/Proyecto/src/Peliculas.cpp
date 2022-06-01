@@ -24,14 +24,11 @@ void Peliculas::setCantidadPeliculas(int _cantidad)
 Pelicula * Peliculas::getPtrPelicula(string _Id)
 {
 	for(int index=0;index<cantidad;index++){
-			if(arrPtrPeliculas[index]->getId()==_Id){
+			if(arrPtrPeliculas[index]->getId()==_Id)
 				return  arrPtrPeliculas[index];
-			}
-
 			else
 				return nullptr;
 	}
-
 }
 int Peliculas::getCantidadPeliculas()
 {
@@ -72,13 +69,36 @@ void Peliculas::leerArchivo()
 }
 void Peliculas::reporteTodasLasPeliculas()
 {
+	double acumulado=0;
+    for(int index=0; index<cantidad; index++)
+    {
+        acumulado = acumulado + arrPtrPeliculas[index]->getCalificacion();
+    }
+     for(int index=0; index<cantidad; index++)
+    {
+    	cout<<arrPtrPeliculas[index]->str()<<endl;
 
+    }
+    if (cantidad > 0)
+        cout<<acumulado/cantidad;
+    else
+        cout<<0;
 }
 void Peliculas::reportePorCalificacion(double _calificacion)
 {
-
+	for(int index=0;index<cantidad;index++){
+			if(arrPtrPeliculas[index]->getCalificacion()==_calificacion)
+				cout<<arrPtrPeliculas[index]->str()<<endl;
+			else
+				cout<<"";
+	}
 }
 void Peliculas::reporteGenero(string genero)
 {
-
+	for(int index=0;index<cantidad;index++){
+			if(arrPtrPeliculas[index]->getGenero()==genero)
+				cout<<arrPtrPeliculas[index]->str()<<endl;
+			else
+				cout<<"";
+	}
 }
