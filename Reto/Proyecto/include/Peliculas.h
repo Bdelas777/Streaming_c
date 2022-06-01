@@ -18,8 +18,8 @@ class Peliculas
 		//Otros metodos
 		void leerArchivo();
 		void reporteTodasLasPeliculas();
-		void reportePorCalificacion(double _calificacionPromedio);
-		void reporteGenero(string _genero);
+		void reportePorCalificacion(double _calificacion);
+		void reporteGenero(string genero);
 
 
 
