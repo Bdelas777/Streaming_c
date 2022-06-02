@@ -3,17 +3,16 @@
 #include <sstream>
 #include"Pelicula.h"
 //Constructores
-Peliculas::Peliculas()
-{
+Peliculas::Peliculas(){}
 
-}
+Peliculas::Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,int _oscares){}
 
 //Setters
 void Peliculas::setPtrPelicula(Pelicula *_pelicula)
 {
-	string row[6];
-	arrPtrPeliculas[cantidad]= new Pelicula(row[0],row[1] ,stoi(row[2]),row[3],stod(row[4]),stoi(row[5]));
-	cantidad= cantidad+1;
+	if (cantidad <50){
+		arrPtrPeliculas[cantidad++] = _pelicula;
+	}
 }
 void Peliculas::setCantidadPeliculas(int _cantidad)
 {
@@ -21,15 +20,13 @@ void Peliculas::setCantidadPeliculas(int _cantidad)
 }
 
 //Getters
-Pelicula * Peliculas::getPtrPelicula(string _Id)
+Pelicula* Peliculas::getPtrPelicula(string _Id)
 {
 	for(int index=0;index<cantidad;index++){
 			if(arrPtrPeliculas[index]->getId()==_Id)
 				return arrPtrPeliculas[index];
-			else if (index==35)
-				return nullptr;
 	}
-
+	return nullptr;
 }
 int Peliculas::getCantidadPeliculas()
 {
@@ -87,19 +84,26 @@ void Peliculas::reporteTodasLasPeliculas()
 }
 void Peliculas::reportePorCalificacion(double _calificacion)
 {
+	int count=0;
 	for(int index=0;index<cantidad;index++){
-			if(arrPtrPeliculas[index]->getCalificacion()==_calificacion)
+			if(arrPtrPeliculas[index]->getCalificacion()==_calificacion){
+				count++;
 				cout<<arrPtrPeliculas[index]->str()<<endl;
-			else
-				cout<<"";
+			}
+
 	}
+	if( count==0)
+		cout<<"No hay peliculas del calificacion: "<< _calificacion;
 }
 void Peliculas::reporteGenero(string genero)
 {
+	int contador=0;
 	for(int index=0;index<cantidad;index++){
-			if(arrPtrPeliculas[index]->getGenero()==genero)
+			if(arrPtrPeliculas[index]->getGenero()==genero){
 				cout<<arrPtrPeliculas[index]->str()<<endl;
-			else
-				cout<<"";
+				contador++;
+			}
 	}
+	if( contador==0)
+		cout<<"No hay peliculas del genero: "<< genero;
 }

@@ -11,6 +11,8 @@ class Peliculas{
 	public:// Metodos
 		//Constructores
 		Peliculas();
+		Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,int _oscares);
+
 		//Setters
 		void setPtrPelicula(Pelicula *_pelicula);
 		void setCantidadPeliculas(int _cantidad);
