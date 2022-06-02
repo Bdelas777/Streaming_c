@@ -51,7 +51,8 @@ int main()
 	Peliculas pelis;
 	pelis.leerArchivo();
 	//cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
-	//cout<<pelis.getPtrPelicula("11111");
+	//cout<<"Objeto a buscar: "<<endl;
+	//cout<<pelis.getPtrPelicula("134")<<endl;
 	//cout<<"Salida por calificacion: "<<endl;
 	//pelis.reportePorCalificacion(9.4);
 	//cout<<"Salida por genero: "<<endl;
