@@ -46,7 +46,7 @@ void Peliculas::leerArchivo()
 	cantidad = 0;
 
 	while(getline(fin,line)){
-		cout << cantidad << line << endl;
+		//cout << cantidad << line << endl;
 		stringstream s(line);
 		int iR = 0;
 		while(getline(s,word,',')){

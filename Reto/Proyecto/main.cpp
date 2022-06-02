@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	//Clase video
+	/*//Clase video
 	cout<<"Ejemplos clase video con y sin dar parametros: "<<endl;
     Video video1;
     Video video2("001","West World",200,"Ciencia ficción",10);
@@ -39,7 +39,7 @@ int main()
 	cout<<"Salida del metodo de calificacion promedio: ";
 	cout<<serie1.calculaCalPromedio()<<endl;
 	cout<<"Ejemplo de salida de clase serie : "<<endl;
-	cout<<serie1.str()<<endl;
+	cout<<serie1.str()<<endl;*/
 
 	/*// Declaracion de un arreglo de apuntadores de clase Video
 	Video *arrPtrVideos[]= {&video1, &video2 , &serie1,&peli1};
@@ -49,11 +49,14 @@ int main()
 		cout<<arrPtrVideos[index]->str()<<endl;
 	}*/
 	Peliculas pelis;
-	//pelis.leerArchivo();
+	pelis.leerArchivo();
 	//cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
-	//cout<<pelis.getPtrPelicula("130");
+	//cout<<pelis.getPtrPelicula("11111");
+	//cout<<"Salida por calificacion: "<<endl;
 	//pelis.reportePorCalificacion(9.4);
+	//cout<<"Salida por genero: "<<endl;
 	//pelis.reporteGenero("Drama");
+	//cout<<"Reporte de todas las peliculas: "<<endl;
 	//pelis.reporteTodasLasPeliculas();
 
     return 0;
