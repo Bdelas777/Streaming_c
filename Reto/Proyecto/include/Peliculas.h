@@ -25,7 +25,7 @@ class Peliculas{
 		void leerArchivo();
 		void reporteTodasLasPeliculas();
 		void reportePorCalificacion(double _calificacion);
-		void reporteGenero(string genero);
+		void reporteGenero(string _genero);
 
 };
 #endif // PELICULAS_H

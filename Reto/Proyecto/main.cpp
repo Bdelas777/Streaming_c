@@ -50,15 +50,15 @@ int main()
 	}*/
 	Peliculas pelis;
 	pelis.leerArchivo();
-	//cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
-	//cout<<"Objeto a buscar: "<<endl;
-	//cout<<pelis.getPtrPelicula("134")<<endl;
-	//cout<<"Salida por calificacion: "<<endl;
-	//pelis.reportePorCalificacion(9.4);
-	//cout<<"Salida por genero: "<<endl;
-	//pelis.reporteGenero("Drama");
-	//cout<<"Reporte de todas las peliculas: "<<endl;
-	//pelis.reporteTodasLasPeliculas();
+	cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
+	cout<<"Objeto a buscar: "<<endl;
+	cout<<pelis.getPtrPelicula("134")<<endl;
+	cout<<"Salida por calificacion: "<<endl;
+	pelis.reportePorCalificacion(9.4);
+	cout<<"Salida por genero: "<<endl;
+	pelis.reporteGenero("Drama");
+	cout<<"Reporte de todas las peliculas: "<<endl;
+	pelis.reporteTodasLasPeliculas();
 
     return 0;
 }
