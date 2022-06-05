@@ -39,7 +39,7 @@ void Peliculas::leerArchivo()
 	fstream fin;
 	string row[6];
 	string line,word;
-	fin.open("C:/Users/6QV46LA/OneDrive/Documentos/Pelicula-1.csv",ios::in);
+	fin.open("C:/Users/6QV46LA/OneDrive/Documentos/GitHub/TC1030_302_de_la_Sierra_Bernardo/Reto/Pelicula-1.csv",ios::in);
 	cantidad = 0;
 
 	while(getline(fin,line)){
@@ -52,9 +52,9 @@ void Peliculas::leerArchivo()
 
 	}
 	fin.close();
-	/*for(int iR=0;iR<cantidad;iR++){
-		cout<< iR << "-"<< arrPtrPeliculas[iR]->str()<<endl;
-	}*/
+	for(int iR=0;iR<cantidad;iR++){
+		cout<< iR << " - "<< arrPtrPeliculas[iR]->str()<<endl;
+	}
 }
 
 void Peliculas::reporteTodasLasPeliculas()

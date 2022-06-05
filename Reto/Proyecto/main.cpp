@@ -5,6 +5,19 @@
 #include "Serie.h"
 #include "Peliculas.h"
 using namespace std;
+int menuPeliculas(){
+    int iOpcion;
+
+    /*cout <<
+    "\n ** Peliculas " <<
+    "\n1. Leer Peliculas  desde Archivo" <<
+    "\n2. Reporte de todas las peliculas" <<
+    "\n3. Reporte de peliculas que tienen cierta Calificacion" <<
+    "\n4. Reporte de peliculas de cierto genero" <<
+    "\n0. SALIR\nTeclea la opcion:";*/
+    cin >> iOpcion;
+    return iOpcion;
+}
 
 int main()
 {
@@ -48,17 +61,47 @@ int main()
 		cout<<arrPtrVideos[index]<<endl;
 		cout<<arrPtrVideos[index]->str()<<endl;
 	}*/
-	Peliculas pelis;
-	pelis.leerArchivo();
-	cout<<"Cantidad de peliculas: "<<pelis.getCantidadPeliculas()<<endl;
-	cout<<"Objeto a buscar: "<<endl;
-	cout<<pelis.getPtrPelicula("134")<<endl;
-	cout<<"Salida por calificacion: "<<endl;
-	pelis.reportePorCalificacion(9.4);
-	cout<<"Salida por genero: "<<endl;
-	pelis.reporteGenero("Drama");
-	cout<<"Reporte de todas las peliculas: "<<endl;
-	pelis.reporteTodasLasPeliculas();
+
+    // se manda llamar al constructor - default
+    Peliculas peliculas{};
+
+    int iOpcion;
+    string sGenero, sId;
+    double dCal;
+
+    // Leer el archivo de peliculas y cargarlo en el arreglo de apuntadores
+    // dentro de la clase Peliculas
+    peliculas.leerArchivo();
+
+    // 1o Inicializar la vcc antes del ciclo
+    iOpcion = menuPeliculas();
+    // 2a Incluir en la condicion la vcc
+    while (iOpcion != 0){
+        switch (iOpcion) {
+                // *** Peliculas
+            case 1: // 1. Leer Peliculas  desde Archivo" <<
+                peliculas.leerArchivo();
+                break;
+            case 2:// 2. Reporte de todas las peliculas" <<
+                peliculas.reporteTodasLasPeliculas();
+                break;
+            case 3:// 3. Reporte de todas las peliculas con cierta Calificacion" <<
+                cout << "Ingresa la calificacion:";
+                cin >> dCal;
+                peliculas.reportePorCalificacion(dCal);
+                break;
+            case 4: // 4. Reporte de todas las peliculas con cierto genero" <<
+                cout << "Ingresa el Genero:";
+                cin >> sGenero;
+                peliculas.reporteGenero(sGenero);
+                break;
+            default:
+                cout << "Opcion Incorrecta!!\n";
+                break;
+        }
+        //3o Actualizar la vcc dentro del ciclo
+        iOpcion = menuPeliculas();
+    }
 
     return 0;
 }
