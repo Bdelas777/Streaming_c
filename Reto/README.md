@@ -3,7 +3,7 @@
 # Avance 1
 # Diagrama UML
 
-![image](https://user-images.githubusercontent.com/93608793/169872454-88fa0ae1-9229-40bb-9f54-ddab24a90cd2.png)
+![image](https://user-images.githubusercontent.com/93608793/172030747-d4e6d31f-8308-4fc3-9ade-c7620dc175fe.png)
 
 #Casos de prueba del avance 2:
 
