@@ -14,6 +14,9 @@ public:
     Serie();
     Serie(string, string, int, string, double);
 
+    //Destructor
+    ~Serie();
+
     //setters
     void setEpisodio(int _index, Episodio _episodio);
     void setCantidad(int _cantidad);
