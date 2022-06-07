@@ -1,26 +1,32 @@
 #ifndef SERIES_H
 #define SERIES_H
-
+#include"Serie.h"
 const int  MAX_SERIES = 50;
 class Series
 {
 private:
     Serie *arrPtrSeries[MAX_SERIES];
-
+	int cantidad {};
 public:
     // Constructores
     Series();
-    Series(string, string, int, string, double);
+    Series(string, string, int, string, double, int);
 
 
     //Setters
-    void setPtrSerie(Serie *ptr);
+    void setPtrSeries(Serie *ptr);
+    void setCantidadSeries( int _cantidad);
+
+    //Getters
+    Serie* getPtrSeries(string _iD);
+    int getCantidadSeries();
 
     //Otros metodos
     void leerArchivo();
-
-
-
+	void reporteTodasLasSeries();
+	void reporteConCalificacion(double _calificacion);
+	void reporteGenero(string _genero);
+	void calcularCalificacionSeries();
 };
 
 #endif // SERIES_H

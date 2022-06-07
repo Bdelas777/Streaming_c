@@ -2,24 +2,114 @@
 #include<fstream>
 #include <sstream>
 #include"Serie.h"
+#include"Episodio.h"
 
 // Constructores
 Series::Series() {}
-Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio ) {}
+Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,
+               int _cantidad) {
+               cantidad=0;
+
+               }
+
 //Setters
-void Series::setPtrSerie(Serie * ptr)
-{
+void Series::setPtrSeries(Serie *ptr){
 	if (cantidad < 50){
-		setPtrSerie[cantidad++] = ptr;
+		arrPtrSeries[cantidad++] = ptr;
 	}
 }
+void Series::setCantidadSeries( int _cantidad){
+	cantidad = _cantidad;
+}
+
+//Getters
+Serie* Series::getPtrSeries(string _Id){
+for(int index=0;index<cantidad;index++){
+			if(arrPtrSeries[index]->getId()==_Id)
+				return arrPtrSeries[index];
+	}
+	return nullptr;
+}
+int Series::getCantidadSeries(){
+return cantidad;
+}
+
 //Otros metodos
 void Series::leerArchivo(){
-	string linea,dato, row[6];
-	int iRow{}, iS{}, cantEpisodios{};
+	string linea,dato ,row[6];
+	int iRow{},iS{}, cantEpisodios{};
 	fstream lectura;
 	Episodio *episodio;
 	lectura.open("C:/Users/6QV46LA/OneDrive/Documentos/Serie2021.csv",ios::in);
-	cantidad=0;
+
+	while(getline(lectura,linea)){
+		//cout << linea << endl;
+		std::stringstream registro(linea);
+		iRow = 0;
+		while(getline(registro,dato,',')){
+			//cout << dato << endl;
+			row[iRow++] = dato;
+		}
+		setPtrSeries( new Serie(row[0],row[1],stoi(row[2]),row[3],stod(row[4]),0));
+		//arrPtrSeries[cantidad]->str();
+
+	}
+	lectura.close();
+	lectura.open("C:/Users/6QV46LA/OneDrive/Documentos/Episodio2021.csv",ios::in);
+	while(getline(lectura,linea)){
+		//cout << linea << endl;
+		stringstream registro(linea);
+		iRow = 0;
+		while(getline(registro,dato,',')){
+			row[iRow++] = dato;
+		}
+		iS =stoi(row[0]) - 500;
+		episodio = new Episodio(row[1],stoi(row[2]),stod(row[3]));
+		cantEpisodios = arrPtrSeries[iS]->getCantidad();
+		if(cantEpisodios < 5){
+			arrPtrSeries[iS]->setEpisodio(cantEpisodios,*(episodio));
+			arrPtrSeries[iS]->setCantidad(++cantEpisodios);
+		}
+		//cout << arrPtrSeries[iS]->str() << endl;
+	}
+	lectura.close();
+	//for(int iS=0;iS<cantidad;iS++)
+		//cout << arrPtrSeries[iS]->str() << endl;
+}
+void Series::reporteTodasLasSeries(){
+
+     double acumulado=0;
+    for(int index=0; index<cantidad; index++)
+    {
+        acumulado = acumulado + arrPtrSeries[index]->getCalificacion();
+    }
+     for(int index=0; index<cantidad; index++)
+    {
+    	cout<<arrPtrSeries[index]->str()<<endl;
+
+    }
+    if (cantidad > 0)
+        cout<<"Promedio Series:"<<acumulado/cantidad<<endl;
+    else
+        cout<<0;
+}
+void Series::reporteConCalificacion(double _calificacion){
+	for(int index=0;index<cantidad;index++){
+			if(arrPtrSeries[index]->getCalificacion()==_calificacion)
+				cout<<arrPtrSeries[index]->str()<<endl;
+	}
+}
+void Series::reporteGenero(string _genero){
+for(int index=0;index<cantidad;index++){
+			if(arrPtrSeries[index]->getGenero()==_genero)
+				cout<<arrPtrSeries[index]->str()<<endl;
+	}
+}
+void Series::calcularCalificacionSeries(){
+for(int index=0;index<cantidad;index++){
+		arrPtrSeries[index]->setCalificacion(arrPtrSeries[index]->calculaCalPromedio());
+	}
+}
+
 
 

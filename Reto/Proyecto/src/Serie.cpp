@@ -5,10 +5,10 @@ Serie::Serie()
     cantidad = 0;
 }
 
-Serie::Serie(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio )
+Serie::Serie(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio , int _cantidad)
     : Video(_iD,  _titulo,  _duracion, _genero,  _calificacionPromedio)
 {
-    cantidad = 0;
+    cantidad = _cantidad;
 }
 
 //setters
@@ -58,9 +58,7 @@ string Serie::str()
 {
     string total_episodios= "\n";
     for(int index=0; index<cantidad; index++)
-    {
-        total_episodios = total_episodios + episodio[index].str() +  "\n";
-    }
+        total_episodios = total_episodios + episodio[index].str() +  '\n';
     return  iD + "," + titulo + ","  + to_string(duracion) +","  + genero + ","  +to_string(calificacionPromedio) +
-            total_episodios;
+            + "," + to_string(cantidad) + total_episodios ;
 }

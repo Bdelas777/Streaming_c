@@ -70,12 +70,12 @@ void Peliculas::reporteTodasLasPeliculas()
 
     }
     if (cantidad > 0)
-        cout<<acumulado/cantidad;
+        cout<<"Promedio Peliculas:"<<acumulado/cantidad<<endl;
     else
         cout<<0;
 }
 
-void Peliculas::reportePorCalificacion(double _calificacion)
+void Peliculas::reporteConCalificacion(double _calificacion)
 {
 	for(int index=0;index<cantidad;index++){
 			if(arrPtrPeliculas[index]->getCalificacion()==_calificacion)
