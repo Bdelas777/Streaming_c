@@ -24,7 +24,7 @@ class Peliculas{
 		//Otros metodos
 		void leerArchivo();
 		void reporteTodasLasPeliculas();
-		void reportePorCalificacion(double _calificacion);
+		void reporteConCalificacion(double _calificacion);
 		void reporteGenero(string _genero);
 
 };

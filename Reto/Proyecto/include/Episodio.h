@@ -8,21 +8,21 @@ class Episodio
 protected:
     string titulo;
     int temporada;
-    int calificacion;
+    double calificacion;
 
 public:
     Episodio();
-    Episodio(string titulo,int _temporada,int _calificacion);
+    Episodio(string titulo,int _temporada,double _calificacion);
 
     //setters
     void setTitulo(string _titulo);
     void setTemporada(int _temporada);
-    void setCalificacion(int _calificacion);
+    void setCalificacion(double _calificacion);
 
     //getters
     string getTitulo();
     int getTemporada();
-    int getCalificacion();
+    double getCalificacion();
 
     //Otros Metodos
     string str();

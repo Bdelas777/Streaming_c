@@ -12,10 +12,8 @@ public:
 
     //Constructores
     Serie();
-    Serie(string, string, int, string, double);
+    Serie(string, string, int, string, double, int);
 
-    //Destructor
-    ~Serie();
 
     //setters
     void setEpisodio(int _index, Episodio _episodio);
