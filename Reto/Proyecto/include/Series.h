@@ -1,16 +1,26 @@
 #ifndef SERIES_H
 #define SERIES_H
 
-
+const int  MAX_SERIES = 50;
 class Series
 {
-	public:
-		Series();
-		virtual ~Series();
+private:
+    Serie *arrPtrSeries[MAX_SERIES];
 
-	protected:
+public:
+    // Constructores
+    Series();
+    Series(string, string, int, string, double);
 
-	private:
+
+    //Setters
+    void setPtrSerie(Serie *ptr);
+
+    //Otros metodos
+    void leerArchivo();
+
+
+
 };
 
 #endif // SERIES_H
