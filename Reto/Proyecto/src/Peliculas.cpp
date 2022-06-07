@@ -52,9 +52,9 @@ void Peliculas::leerArchivo()
 
 	}
 	fin.close();
-	for(int iR=0;iR<cantidad;iR++){
+	/*(int iR=0;iR<cantidad;iR++){
 		cout<< iR << " - "<< arrPtrPeliculas[iR]->str()<<endl;
-	}
+	}*/
 }
 
 void Peliculas::reporteTodasLasPeliculas()
