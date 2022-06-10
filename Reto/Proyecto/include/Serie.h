@@ -14,7 +14,6 @@ public:
     Serie();
     Serie(string, string, int, string, double, int);
 
-
     //setters
     void setEpisodio(int _index, Episodio _episodio);
     void setCantidad(int _cantidad);
@@ -26,6 +25,9 @@ public:
     //Otros Metodos
     double calculaCalPromedio();
     string str();
+
+    //Sobrecarga de metodo
+    friend ostream &operator<<(ostream &out, const Serie &serie);
 };
 
 #endif // SERIE_H

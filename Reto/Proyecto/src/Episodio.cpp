@@ -8,7 +8,7 @@ Episodio::Episodio()
     calificacion = 7;
 }
 
-Episodio::Episodio(string _titulo,int _temporada,double _calificacion)
+Episodio::Episodio(string _titulo, int _temporada, double _calificacion)
 {
     titulo = _titulo;
     temporada = _temporada;
@@ -48,7 +48,7 @@ double Episodio::getCalificacion()
 }
 
 //Otros Metodos
-string Episodio::str()
+string Episodio::str() const
 {
     return  titulo + ","   + to_string(temporada) + ","  + to_string(calificacion);
 }

@@ -24,6 +24,9 @@ public:
     //Otros Metodos
     string str();
 
+    //Sobrecarga de metodo
+    friend ostream &operator<<(ostream &out, const Pelicula &peli);
+
 };
 
 #endif // PELICULA_H
