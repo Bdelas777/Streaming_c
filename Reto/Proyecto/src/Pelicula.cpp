@@ -3,7 +3,7 @@
 //Constructores
 Pelicula::Pelicula()
 {
-    oscares=2;
+    oscares = 2;
 }
 
 Pelicula::Pelicula(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,int _oscares):
@@ -11,6 +11,7 @@ Pelicula::Pelicula(string _iD, string _titulo, int _duracion,string _genero, dou
 {
     oscares = _oscares;
 }
+
 //setters
 void Pelicula::setOscares(int _oscares)
 {
@@ -26,5 +27,13 @@ int Pelicula::getOscares()
 string Pelicula::str()
 {
     return  iD + "," + titulo + ","  + to_string(duracion) + ","  + genero + ","  + to_string(calificacionPromedio) +
-    "," +to_string(oscares);
+            "," + to_string(oscares);
+}
+
+// Sobrecarga de metodo
+ostream &operator << (ostream &out, const Pelicula &peli)
+{
+    out << peli.iD << "," << peli.titulo << ","  << peli.duracion << ","  << peli.genero << ","  << peli.calificacionPromedio <<
+        "," << peli.oscares << endl;
+    return out;
 }

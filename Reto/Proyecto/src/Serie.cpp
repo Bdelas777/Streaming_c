@@ -25,6 +25,7 @@ void Serie::setCantidad(int _cantidad)
 {
     cantidad = _cantidad;
 }
+
 //Getters
 Episodio Serie::getEpisodio(int _index)
 {
@@ -43,22 +44,33 @@ int Serie::getCantidad()
 // otros metodos
 double Serie::calculaCalPromedio()
 {
-    double acumulado=0;
-    for(int index=0; index<cantidad; index++)
+    double acumulado = 0;
+    for(int index = 0; index < cantidad;index ++)
     {
         acumulado = acumulado + episodio[index].getCalificacion();
     }
     if (cantidad > 0)
-        return acumulado/cantidad;
+        return acumulado / cantidad;
     else
         return 0;
 }
 
 string Serie::str()
 {
-    string total_episodios= "\n";
-    for(int index=0; index<cantidad; index++)
+    string total_episodios = "\n";
+    for(int index = 0; index < cantidad; index++)
         total_episodios = total_episodios + episodio[index].str() +  '\n';
-    return  iD + "," + titulo + ","  + to_string(duracion) +","  + genero + ","  +to_string(calificacionPromedio) +
+    return  iD + "," + titulo + ","  + to_string(duracion) +","  + genero + ","  + to_string(calificacionPromedio) +
             + "," + to_string(cantidad) + total_episodios ;
+}
+
+//Sobrecarga de metodo
+ostream &operator<<(ostream &out, const Serie &serie){
+    string acum = "\n";
+    for(int index=0; index<serie.cantidad; index++){
+        acum = acum + to_string(index) + '-' + serie.episodio[index].str() + '\n';
+    }
+    out << serie.iD << "," << serie.titulo << ","  << serie.duracion << ","  << serie.genero << ","  <<
+            serie.calificacionPromedio << "," << serie.cantidad << acum;
+    return out;
 }

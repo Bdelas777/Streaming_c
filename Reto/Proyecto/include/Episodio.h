@@ -12,7 +12,7 @@ protected:
 
 public:
     Episodio();
-    Episodio(string titulo,int _temporada,double _calificacion);
+    Episodio(string _titulo,int _temporada,double _calificacion);
 
     //setters
     void setTitulo(string _titulo);
@@ -25,7 +25,7 @@ public:
     double getCalificacion();
 
     //Otros Metodos
-    string str();
+    string str() const;
 
 };
 

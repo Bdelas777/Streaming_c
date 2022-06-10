@@ -18,7 +18,7 @@ public:
     void setCantidadSeries( int _cantidad);
 
     //Getters
-    Serie* getPtrSeries(string _iD);
+    Serie* getPtrSeries(string _Id);
     int getCantidadSeries();
 
     //Otros metodos
