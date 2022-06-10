@@ -6,8 +6,8 @@
 
 // Constructores
 Series::Series() {}
-Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,
-               int _cantidad)
+
+Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,int _cantidad)
 {
     cantidad = 0;
 }
@@ -16,9 +16,7 @@ Series::Series(string _iD, string _titulo, int _duracion,string _genero, double 
 void Series::setPtrSeries(Serie *ptr)
 {
     if (cantidad < 50)
-    {
         arrPtrSeries[cantidad++] = ptr;
-    }
 }
 
 void Series::setCantidadSeries( int _cantidad)
@@ -49,17 +47,12 @@ void Series::leerArchivo()
     fstream lectura;
     Episodio *episodio;
     lectura.open("C:/Users/6QV46LA/OneDrive/Documentos/GitHub/TC1030_302_de_la_Sierra_Bernardo/Serie2021.csv",ios::in);
-
     while(getline(lectura, linea))
     {
         std::stringstream registro(linea);
         iRow = 0;
-
         while(getline(registro, dato, ','))
-        {
-
             row[iRow++] = dato;
-        }
         setPtrSeries( new Serie(row[0], row[1], stoi(row[2]), row[3], stod(row[4]), 0));
     }
 
@@ -100,6 +93,7 @@ void Series::reporteTodasLasSeries()
     else
         cout << 0;
 }
+
 void Series::reporteConCalificacion(double _calificacion)
 {
     int contador = 0;
@@ -112,8 +106,9 @@ void Series::reporteConCalificacion(double _calificacion)
         }
     }
     if(contador == 0)
-		cout << "No hay series de la calificación: " << _calificacion << endl;
+        cout << "No hay series de la calificación: " << _calificacion << endl;
 }
+
 void Series::reporteGenero(string _genero)
 {
     int count = 0;
@@ -125,12 +120,12 @@ void Series::reporteGenero(string _genero)
             count ++;
         }
     }
-       if(count == 0)
-            cout << "No hay peliculas del genero:" << _genero << endl;
+    if(count == 0)
+        cout << "No hay peliculas del genero:" << _genero << endl;
 }
+
 void Series::calcularCalificacionSeries()
 {
     for(int index = 0; index < cantidad; index ++)
         arrPtrSeries[index] -> setCalificacion(arrPtrSeries[index] -> calculaCalPromedio());
-
 }

@@ -15,7 +15,7 @@ Episodio::Episodio(string _titulo, int _temporada, double _calificacion)
     calificacion = _calificacion;
 }
 
-//setters
+//Setters
 void Episodio::setTitulo(string _titulo)
 {
     titulo = _titulo;
@@ -31,7 +31,7 @@ void Episodio::setCalificacion(double _calificacion)
     calificacion = _calificacion;
 }
 
-//getters
+//Getters
 string Episodio::getTitulo()
 {
     return titulo;

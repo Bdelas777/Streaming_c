@@ -7,34 +7,34 @@ using namespace std;
 
 class Video
 {
-	public:
-		//Constructores
-		Video();
-		Video(string _iD, string _titulo, int _duracion ,string _genero, double _calificacionPromedio);
+protected://Atributos
+    string iD;
+    string titulo;
+    int duracion;
+    string genero;
+    double calificacionPromedio;
 
-		//setters
-		void setId(string _iD);
-		void setTitulo(string _titulo);
-		void setDuracion(int _duracion);
-		void setGenero(string _genero);
-		void setCalificacion(double _calificacionPromedio);
+public://Metodos
+    //Constructores
+    Video();
+    Video(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio);
 
-		//getters
-		string getId();
-		string getTitulo();
-		int getDuracion();
-		string getGenero();
-		double getCalificacion();
+    //Setters
+    void setId(string _iD);
+    void setTitulo(string _titulo);
+    void setDuracion(int _duracion);
+    void setGenero(string _genero);
+    void setCalificacion(double _calificacionPromedio);
 
-		// Otros Metodos
-		virtual string str();
+    //Getters
+    string getId();
+    string getTitulo();
+    int getDuracion();
+    string getGenero();
+    double getCalificacion();
 
-	protected:
-		string iD;
-		string titulo;
-		int duracion;
-		string genero;
-		double calificacionPromedio;
+    //Otros Metodos
+    virtual string str();
 
 };
 

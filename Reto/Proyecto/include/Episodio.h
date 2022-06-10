@@ -5,21 +5,21 @@ using namespace std;
 
 class Episodio
 {
-protected:
+protected://Atributos
     string titulo;
     int temporada;
     double calificacion;
 
-public:
+public://Metodos
     Episodio();
     Episodio(string _titulo,int _temporada,double _calificacion);
 
-    //setters
+    //Setters
     void setTitulo(string _titulo);
     void setTemporada(int _temporada);
     void setCalificacion(double _calificacion);
 
-    //getters
+    //Getters
     string getTitulo();
     int getTemporada();
     double getCalificacion();

@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-//constructores
+//Constructores
 Video::Video()
 {
     iD = "201";
@@ -21,7 +21,7 @@ Video::Video(string _iD, string _titulo, int _duracion, string _genero, double _
     calificacionPromedio = _calificacionPromedio;
 }
 
-//setters
+//Setters
 void Video::setId(string _iD)
 {
     iD = _iD;
@@ -47,7 +47,7 @@ void Video::setCalificacion(double _calificacionPromedio)
     calificacionPromedio = _calificacionPromedio;
 }
 
-//getters
+//Getters
 string Video::getId()
 {
     return iD;
