@@ -63,7 +63,7 @@ string Serie::str()
 ostream &operator << (ostream &out, const Serie &serie)
 {
     string acum = "\n";
-    for(int index=0; index<serie.cantidad; index++)
+    for(int index = 0; index < serie.cantidad; index++)
         acum = acum + to_string(index) + '-' + serie.episodio[index].str() + '\n';
     out << serie.iD << "," << serie.titulo << ","  << serie.duracion << ","  << serie.genero << ","  <<
         serie.calificacionPromedio << "," << serie.cantidad << acum;
