@@ -85,7 +85,7 @@ void Series::reporteTodasLasSeries()
     for(int index = 0; index < cantidad; index ++)
     {
         acumulado = acumulado + arrPtrSeries[index] -> getCalificacion();
-        cout<<index << "-" << arrPtrSeries[index] << endl;
+        cout<<index << "-" << * arrPtrSeries[index] << endl;
 
     }
     if (cantidad > 0)
