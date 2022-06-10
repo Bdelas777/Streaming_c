@@ -5,15 +5,15 @@
 //Constructores
 Peliculas::Peliculas(){}
 
-Peliculas::Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio,int _oscares){}
+Peliculas::Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _oscares){}
 
 //Setters
 void Peliculas::setPtrPelicula(Pelicula *_pelicula)
 {
-	if (cantidad < 50){
+	if (cantidad < 50)
 		arrPtrPeliculas[cantidad++] = _pelicula;
-	}
 }
+
 void Peliculas::setCantidadPeliculas(int _cantidad)
 {
 	cantidad = _cantidad;
@@ -28,6 +28,7 @@ Pelicula* Peliculas::getPtrPelicula(string _Id)
 	}
 	return nullptr;
 }
+
 int Peliculas::getCantidadPeliculas()
 {
     return cantidad;
@@ -41,13 +42,11 @@ void Peliculas::leerArchivo()
 	string line,word;
 	fin.open("C:/Users/6QV46LA/OneDrive/Documentos/GitHub/TC1030_302_de_la_Sierra_Bernardo/Reto/Pelicula-1.csv",ios::in);
 	cantidad = 0;
-
 	while(getline(fin, line)){
 		stringstream s(line);
 		int iR = 0;
-		while(getline(s, word, ',')){
+		while(getline(s, word, ','))
 			row[iR++] = word;
-		}
 		setPtrPelicula(new Pelicula(row[0], row[1], stoi(row[2]), row[3], stod(row[4]), stoi(row[5])));
 	}
 	fin.close();
@@ -89,7 +88,7 @@ void Peliculas::reporteGenero(string _genero)
 	for(int index = 0;index < cantidad;index ++){
 			if(arrPtrPeliculas[index] -> getGenero() == _genero){
 				cout << index << ' ' << *arrPtrPeliculas[index];
-				contador++;
+				contador ++;
 			}
 	}
 	if(contador == 0)

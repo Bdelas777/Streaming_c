@@ -4,17 +4,16 @@
 #include "Video.h"
 class Serie:public Video
 {
-private:
+private://Atributos
     Episodio episodio[5];
     int cantidad;
 
-public:
-
+public://Metodos
     //Constructores
     Serie();
     Serie(string, string, int, string, double, int);
 
-    //setters
+    //Setters
     void setEpisodio(int _index, Episodio _episodio);
     void setCantidad(int _cantidad);
 

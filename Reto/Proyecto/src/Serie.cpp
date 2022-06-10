@@ -1,24 +1,22 @@
 #include "Serie.h"
+
 //Constructores
 Serie::Serie()
 {
     cantidad = 0;
 }
 
-Serie::Serie(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio , int _cantidad)
-    : Video(_iD,  _titulo,  _duracion, _genero,  _calificacionPromedio)
+Serie::Serie(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _cantidad)
+    : Video(_iD,  _titulo,  _duracion, _genero, _calificacionPromedio)
 {
     cantidad = _cantidad;
 }
 
-//setters
+//Setters
 void Serie::setEpisodio(int _index, Episodio _episodio)
 {
-
     if( _index >= 0 and _index <= cantidad)
-    {
         episodio[_index] = _episodio;
-    }
 }
 
 void Serie::setCantidad(int _cantidad)
@@ -30,9 +28,7 @@ void Serie::setCantidad(int _cantidad)
 Episodio Serie::getEpisodio(int _index)
 {
     if( _index >= 0 and _index <= cantidad)
-    {
         return episodio[_index];
-    }
     else
         return Episodio();
 }
@@ -41,14 +37,13 @@ int Serie::getCantidad()
 {
     return cantidad;
 }
-// otros metodos
+
+//Otros metodos
 double Serie::calculaCalPromedio()
 {
     double acumulado = 0;
-    for(int index = 0; index < cantidad;index ++)
-    {
+    for(int index = 0; index < cantidad; index ++)
         acumulado = acumulado + episodio[index].getCalificacion();
-    }
     if (cantidad > 0)
         return acumulado / cantidad;
     else
@@ -65,12 +60,12 @@ string Serie::str()
 }
 
 //Sobrecarga de metodo
-ostream &operator<<(ostream &out, const Serie &serie){
+ostream &operator << (ostream &out, const Serie &serie)
+{
     string acum = "\n";
-    for(int index=0; index<serie.cantidad; index++){
+    for(int index=0; index<serie.cantidad; index++)
         acum = acum + to_string(index) + '-' + serie.episodio[index].str() + '\n';
-    }
     out << serie.iD << "," << serie.titulo << ","  << serie.duracion << ","  << serie.genero << ","  <<
-            serie.calificacionPromedio << "," << serie.cantidad << acum;
+        serie.calificacionPromedio << "," << serie.cantidad << acum;
     return out;
 }
