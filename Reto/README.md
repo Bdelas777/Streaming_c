@@ -4,6 +4,9 @@
 # Diagrama UML
 En este avance nos dedicamos definir las clases video,pelicula,serie y episodio
 
+![image](https://user-images.githubusercontent.com/93608793/173116875-8b87198c-e10f-43ed-8ea4-d6faa8d9f56e.png)
+
+
 # Avance 2
 # Diagrama UML
 En este avance hicimos la clase peliculas y usamos los pointers
