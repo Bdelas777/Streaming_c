@@ -43,7 +43,7 @@ int Series::getCantidadSeries()
 void Series::leerArchivo()
 {
     string linea, dato, row[6];
-    int iRow{},iS{}, cantEpisodios{};
+    int iRow{}, iS{}, cantEpisodios{};
     fstream lectura;
     Episodio *episodio;
     lectura.open("C:/Users/6QV46LA/OneDrive/Documentos/GitHub/TC1030_302_de_la_Sierra_Bernardo/Serie2021.csv",ios::in);
@@ -63,10 +63,8 @@ void Series::leerArchivo()
         stringstream registro(linea);
         iRow = 0;
         while(getline(registro, dato, ','))
-        {
             row[iRow++] = dato;
-        }
-        iS =stoi(row[0]) - 500;
+        iS = stoi(row[0]) - 500;
         episodio = new Episodio(row[1], stoi(row[2]), stod(row[3]));
         cantEpisodios = arrPtrSeries[iS] -> getCantidad();
         if(cantEpisodios < 5)
