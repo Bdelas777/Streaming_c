@@ -23,7 +23,7 @@ void Peliculas::setCantidadPeliculas(int _cantidad)
 Pelicula* Peliculas::getPtrPelicula(string _Id)
 {
 	for(int index = 0;index < cantidad;index ++){
-			if(arrPtrPeliculas[index]->getId()==_Id)
+			if(arrPtrPeliculas[index] -> getId()==_Id)
 				return arrPtrPeliculas[index];
 	}
 	return nullptr;
@@ -79,7 +79,7 @@ void Peliculas::reporteConCalificacion(double _calificacion)
 			}
 	}
 		if(contador == 0)
-		cout << "No hay peliculas de la calificación:" << _calificacion << endl;
+			cout << "No hay peliculas de la calificación:" << _calificacion << endl;
 }
 
 void Peliculas::reporteGenero(string _genero)

@@ -12,7 +12,7 @@ protected://Atributos
 
 public://Metodos
     Episodio();
-    Episodio(string _titulo,int _temporada,double _calificacion);
+    Episodio(string _titulo, int _temporada, double _calificacion);
 
     //Setters
     void setTitulo(string _titulo);
