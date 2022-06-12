@@ -6,11 +6,13 @@ Serie::Serie()
     cantidad = 0;
 }
 
+
 Serie::Serie(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _cantidad)
     : Video(_iD,  _titulo,  _duracion, _genero, _calificacionPromedio)
 {
     cantidad = _cantidad;
 }
+
 
 //Setters
 void Serie::setEpisodio(int _index, Episodio _episodio)
@@ -19,10 +21,12 @@ void Serie::setEpisodio(int _index, Episodio _episodio)
         episodio[_index] = _episodio;
 }
 
+
 void Serie::setCantidad(int _cantidad)
 {
     cantidad = _cantidad;
 }
+
 
 //Getters
 Episodio Serie::getEpisodio(int _index)
@@ -33,10 +37,12 @@ Episodio Serie::getEpisodio(int _index)
         return Episodio();
 }
 
+
 int Serie::getCantidad()
 {
     return cantidad;
 }
+
 
 //Otros metodos
 double Serie::calculaCalPromedio()
@@ -50,6 +56,7 @@ double Serie::calculaCalPromedio()
         return 0;
 }
 
+
 string Serie::str()
 {
     string total_episodios = "\n";
@@ -58,6 +65,7 @@ string Serie::str()
     return  iD + "," + titulo + ","  + to_string(duracion) +","  + genero + ","  + to_string(calificacionPromedio) +
             + "," + to_string(cantidad) + total_episodios ;
 }
+
 
 //Sobrecarga de metodo
 ostream &operator << (ostream &out, const Serie &serie)

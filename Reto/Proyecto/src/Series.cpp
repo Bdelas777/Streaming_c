@@ -5,12 +5,11 @@
 #include"Episodio.h"
 
 // Constructores
-Series::Series() {}
+Series::Series(){}
 
-Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _cantidad)
-{
-    cantidad = 0;
-}
+
+Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _cantidad){}
+
 
 //Setters
 void Series::setPtrSeries(Serie *ptr)
@@ -19,10 +18,12 @@ void Series::setPtrSeries(Serie *ptr)
         arrPtrSeries[cantidad++] = ptr;
 }
 
+
 void Series::setCantidadSeries( int _cantidad)
 {
     cantidad = _cantidad;
 }
+
 
 //Getters
 Serie* Series::getPtrSeries(string _Id)
@@ -34,10 +35,13 @@ Serie* Series::getPtrSeries(string _Id)
     }
     return nullptr;
 }
+
+
 int Series::getCantidadSeries()
 {
     return cantidad;
 }
+
 
 //Otros metodos
 void Series::leerArchivo()
@@ -77,6 +81,8 @@ void Series::leerArchivo()
     //for(int iS=0;iS<cantidad;iS++)
     //  cout << arrPtrSeries[iS]->str() << endl;
 }
+
+
 void Series::reporteTodasLasSeries()
 {
     double acumulado = 0;
@@ -91,6 +97,7 @@ void Series::reporteTodasLasSeries()
     else
         cout << 0;
 }
+
 
 void Series::reporteConCalificacion(double _calificacion)
 {
@@ -107,6 +114,7 @@ void Series::reporteConCalificacion(double _calificacion)
         cout << "No hay series de la calificación: " << _calificacion << endl;
 }
 
+
 void Series::reporteGenero(string _genero)
 {
     int count = 0;
@@ -121,6 +129,7 @@ void Series::reporteGenero(string _genero)
     if(count == 0)
         cout << "No hay peliculas del genero:" << _genero << endl;
 }
+
 
 void Series::calcularCalificacionSeries()
 {
