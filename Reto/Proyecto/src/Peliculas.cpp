@@ -5,7 +5,9 @@
 //Constructores
 Peliculas::Peliculas(){}
 
+
 Peliculas::Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _oscares){}
+
 
 //Setters
 void Peliculas::setPtrPelicula(Pelicula *_pelicula)
@@ -14,10 +16,12 @@ void Peliculas::setPtrPelicula(Pelicula *_pelicula)
 		arrPtrPeliculas[cantidad++] = _pelicula;
 }
 
+
 void Peliculas::setCantidadPeliculas(int _cantidad)
 {
 	cantidad = _cantidad;
 }
+
 
 //Getters
 Pelicula* Peliculas::getPtrPelicula(string _Id)
@@ -29,10 +33,12 @@ Pelicula* Peliculas::getPtrPelicula(string _Id)
 	return nullptr;
 }
 
+
 int Peliculas::getCantidadPeliculas()
 {
     return cantidad;
 }
+
 
 //Otros metodos
 void Peliculas::leerArchivo()
@@ -55,6 +61,7 @@ void Peliculas::leerArchivo()
 	}*/
 }
 
+
 void Peliculas::reporteTodasLasPeliculas()
 {
 	double acumulado = 0;
@@ -69,6 +76,7 @@ void Peliculas::reporteTodasLasPeliculas()
         cout << "No hay promedio";
 }
 
+
 void Peliculas::reporteConCalificacion(double _calificacion)
 {
 	int contador = 0;
@@ -81,6 +89,7 @@ void Peliculas::reporteConCalificacion(double _calificacion)
 		if(contador == 0)
 			cout << "No hay peliculas de la calificación:" << _calificacion << endl;
 }
+
 
 void Peliculas::reporteGenero(string _genero)
 {
