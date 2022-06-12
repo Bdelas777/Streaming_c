@@ -8,7 +8,7 @@
 Series::Series(){}
 
 
-Series::Series(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _cantidad){}
+Series::Series(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad){}
 
 
 //Setters
