@@ -14,15 +14,18 @@ public://Metodos
     Episodio();
     Episodio(string _titulo, int _temporada, double _calificacion);
 
+
     //Setters
     void setTitulo(string _titulo);
     void setTemporada(int _temporada);
     void setCalificacion(double _calificacion);
 
+
     //Getters
     string getTitulo();
     int getTemporada();
     double getCalificacion();
+
 
     //Otros Metodos
     string str() const;

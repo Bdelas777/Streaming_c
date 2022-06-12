@@ -10,16 +10,20 @@ class Pelicula : public Video
 private://Atributos
     int oscares;
 
+
 public://Metodos
     //Constructores
     Pelicula();
     Pelicula(string, string, int, string, double, int _oscares);
 
+
     //Setters
     void setOscares(int _oscares);
 
+
     //Getters
     int getOscares();
+
 
     //Otros Metodos
     string str();

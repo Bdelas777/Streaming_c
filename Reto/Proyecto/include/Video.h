@@ -14,10 +14,12 @@ protected://Atributos
     string genero;
     double calificacionPromedio;
 
+
 public://Metodos
     //Constructores
     Video();
     Video(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio);
+
 
     //Setters
     void setId(string _iD);
@@ -26,12 +28,14 @@ public://Metodos
     void setGenero(string _genero);
     void setCalificacion(double _calificacionPromedio);
 
+
     //Getters
     string getId();
     string getTitulo();
     int getDuracion();
     string getGenero();
     double getCalificacion();
+
 
     //Otros Metodos
     virtual string str();
