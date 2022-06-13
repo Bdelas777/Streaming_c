@@ -31,15 +31,15 @@ int Pelicula::getOscares()
 //Otros metodos
 string Pelicula::str()
 {
-    return  iD + "," + titulo + ","  + to_string(duracion) + ","  + genero + ","  + to_string(calificacionPromedio) +
-            "," + to_string(oscares);
+    return  iD + ',' + titulo + ','  + to_string(duracion) + ',' + genero + ',' + to_string(calificacionPromedio) +
+            ',' + to_string(oscares);
 }
 
 
 // Sobrecarga de metodo
 ostream &operator << (ostream &out, const Pelicula &peli)
 {
-    out << peli.iD << "," << peli.titulo << ","  << peli.duracion << ","  << peli.genero << ","  << peli.calificacionPromedio <<
-        "," << peli.oscares << endl;
+    out << peli.iD << ',' << peli.titulo << ',' << peli.duracion << ',' << peli.genero << ',' << peli.calificacionPromedio <<
+        ',' << peli.oscares << endl;
     return out;
 }

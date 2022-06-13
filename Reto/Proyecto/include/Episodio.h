@@ -5,12 +5,14 @@ using namespace std;
 
 class Episodio
 {
-protected://Atributos
+protected:
+    //Atributos
     string titulo;
     int temporada;
     double calificacion;
 
-public://Metodos
+public:
+    //Metodos
     Episodio();
     Episodio(string _titulo, int _temporada, double _calificacion);
 

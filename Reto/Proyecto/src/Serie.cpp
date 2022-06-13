@@ -1,7 +1,8 @@
 #include "Serie.h"
 
+
 //Constructores
-Serie::Serie()
+Serie::Serie():Video()
 {
     cantidad = 0;
 }
@@ -48,8 +49,8 @@ int Serie::getCantidad()
 double Serie::calculaCalPromedio()
 {
     double acumulado = 0;
-    for(int index = 0; index < cantidad; index ++)
-        acumulado = acumulado + episodio[index].getCalificacion();
+    for(int iR = 0; iR < cantidad; iR ++)
+        acumulado = acumulado + episodio[iR].getCalificacion();
     if (cantidad > 0)
         return acumulado / cantidad;
     else
@@ -62,8 +63,9 @@ string Serie::str()
     string total_episodios = "\n";
     for(int index = 0; index < cantidad; index++)
         total_episodios = total_episodios + episodio[index].str() +  '\n';
+
     return  iD + "," + titulo + ","  + to_string(duracion) +","  + genero + ","  + to_string(calificacionPromedio) +
-            + "," + to_string(cantidad) + total_episodios ;
+            + "," + to_string(cantidad) + total_episodios;
 }
 
 

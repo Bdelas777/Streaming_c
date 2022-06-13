@@ -1,34 +1,34 @@
 # depslib dependency file v1.0
-1654996232 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\episodio.cpp
+1655138376 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\episodio.cpp
 	"Episodio.h"
 
-1654908959 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
+1655138165 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
 	<iostream>
 
-1654996253 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
+1655138418 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
 	"Pelicula.h"
 
-1654909016 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\pelicula.h
+1655053511 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\pelicula.h
 	<iostream>
 	"Video.h"
 
-1654831248 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
+1655053812 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
 	<stdio.h>
 	<string>
 	<iostream>
 
-1654996321 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\serie.cpp
+1655139279 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\serie.cpp
 	"Serie.h"
 
-1654996403 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
+1655139239 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
 	"Video.h"
 	<string>
 
-1654831616 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\serie.h
+1655053667 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\serie.h
 	"Episodio.h"
 	"Video.h"
 
-1654998208 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
+1655137922 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\main.cpp
 	<iostream>
 	"Video.h"
 	"Pelicula.h"
@@ -37,22 +37,22 @@
 	"Peliculas.h"
 	"Series.h"
 
-1654996292 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\peliculas.cpp
+1655138880 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\peliculas.cpp
 	"Peliculas.h"
 	<fstream>
 	<sstream>
 	"Pelicula.h"
 
-1654832203 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\peliculas.h
+1655138550 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\peliculas.h
 	"Pelicula.h"
 
-1654997155 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\series.cpp
+1655139462 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\series.cpp
 	"Series.h"
 	<fstream>
 	<sstream>
 	"Serie.h"
 	"Episodio.h"
 
-1654832145 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\series.h
+1655138979 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\series.h
 	"Serie.h"
 
