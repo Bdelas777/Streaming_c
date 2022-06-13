@@ -51,7 +51,7 @@ En este caso nuestro test nos pide hacer un reporte de todas las series y sacar 
 ![image](https://user-images.githubusercontent.com/93608793/173410089-38160362-1db6-4731-903b-bef5d1af1d1b.png)
 
 
-
+Segundo y Tercer test
 
 En este caso se nos pide primero que ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion al inicio
 De ahi se nos pide que en este caso le damos un determinado genero y nos devuelve las peliculas con determinado genero:
