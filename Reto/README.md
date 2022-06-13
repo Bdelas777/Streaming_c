@@ -67,6 +67,7 @@ Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del me
 ![image](https://user-images.githubusercontent.com/93608793/172988251-87a56fa2-9e71-4bb3-9f54-dd707b6c4b7b.png)
 
 Cuarto test:
+
 Ahora nos pide calcular la calificacion de todas las series y de ahi imprimer el reporte de todas las series
 
 
@@ -76,6 +77,7 @@ Ahora nos pide calcular la calificacion de todas las series y de ahi imprimer el
 
 
 Quinto test:
+
 En este caso calcular la calificacion de todas las series, de ahi os pide primero que ingresamos una calificacion,el codigo nos devuelve la pelicula con esa calificacion al inicio y pones una opcion incorrecta.
 
 ![image](https://user-images.githubusercontent.com/93608793/173408170-15599b08-6902-4b0e-9665-cac607c9eabc.png)
