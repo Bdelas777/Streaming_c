@@ -10,7 +10,7 @@ int menuPeliculas()
 {
     int iOpcion;
 
-    /*  cout <<
+      cout <<
       "\n *******  Peliculas *******" <<
       "\n1. Leer Peliculas  desde Archivo" <<
       "\n2. Reporte de todas las peliculas" <<
@@ -23,7 +23,7 @@ int menuPeliculas()
       "\n8. Reporte de Series de cierto genero" <<
       "\n9. Calcular calificación de todas las Series" <<
 
-      "\n\n0. SALIR\nTeclea la opcion:"; */
+      "\n\n0. SALIR\nTeclea la opcion:";
     cin >> iOpcion;
     return iOpcion;
 }
@@ -61,12 +61,12 @@ int main()
             peliculas.reporteTodasLasPeliculas();
             break;
         case 3:// 3. Reporte de todas las peliculas con cierta Calificacion" <<
-            //  cout << "Ingresa la calificacion:";
+             cout << "Ingresa la calificacion:";
             cin >> dCal;
             peliculas.reporteConCalificacion(dCal);
             break;
         case 4: // 4. Reporte de todas las peliculas con cierto genero" <<
-            //  cout << "Ingresa el Genero:";
+              cout << "Ingresa el Genero:";
             cin >> sGenero;
             peliculas.reporteGenero(sGenero);
             break;
@@ -77,12 +77,12 @@ int main()
             series.reporteTodasLasSeries();
             break;
         case 7:  // 7. Reporte de Series que tienen cierta Calificacion
-            //  cout << "Ingresa la calificación:";
+            cout << "Ingresa la calificación:";
             cin >> dCal;
             series.reporteConCalificacion(dCal);
             break;
         case 8:  // 8. Reporte de Series de cierto genero
-            //  cout << "Ingresa el Genero:";
+              cout << "Ingresa el Genero:";
             cin >> sGenero;
             series.reporteGenero(sGenero);
             //  videos.reporteVideos();

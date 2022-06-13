@@ -13,7 +13,6 @@ private://Atributos
 public://Metodos
     // Constructores
     Series();
-    Series(string, string, int, string, double, int);
 
 
     //Setters

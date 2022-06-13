@@ -3,10 +3,10 @@
 #include <sstream>
 #include"Pelicula.h"
 //Constructores
-Peliculas::Peliculas() {}
-
-
-Peliculas::Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _oscares) {}
+Peliculas::Peliculas()
+{
+    cantidad = 0;
+}
 
 
 //Setters
@@ -26,10 +26,16 @@ void Peliculas::setCantidadPeliculas(int _cantidad)
 //Getters
 Pelicula* Peliculas::getPtrPelicula(string _Id)
 {
-    for(int index = 0; index < cantidad; index ++)
+    int contador = 0;
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        if(arrPtrPeliculas[index] -> getId()==_Id)
-            return arrPtrPeliculas[index];
+        if(arrPtrPeliculas[iR] -> getId()==_Id)
+        {
+            contador = 1;
+            cout << arrPtrPeliculas[iR] -> str();
+            return arrPtrPeliculas[iR];
+        }
+
     }
     return nullptr;
 }
@@ -67,10 +73,10 @@ void Peliculas::leerArchivo()
 void Peliculas::reporteTodasLasPeliculas()
 {
     double acumulado = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        acumulado = acumulado + arrPtrPeliculas[index] -> getCalificacion();
-        cout << index << "-" << arrPtrPeliculas[index] -> str() << endl;
+        acumulado = acumulado + arrPtrPeliculas[iR] -> getCalificacion();
+        cout << iR << "-" << arrPtrPeliculas[iR] -> str() << endl;
     }
     if (cantidad > 0)
         cout << "Promedio Peliculas:" << acumulado / cantidad << endl;
@@ -82,11 +88,11 @@ void Peliculas::reporteTodasLasPeliculas()
 void Peliculas::reporteConCalificacion(double _calificacion)
 {
     int contador = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        if(arrPtrPeliculas[index] -> getCalificacion() == _calificacion)
+        if(arrPtrPeliculas[iR] -> getCalificacion() == _calificacion)
         {
-            cout << arrPtrPeliculas[index] -> str() << endl;
+            cout << arrPtrPeliculas[iR] -> str() << endl;
             contador ++;
         }
     }
@@ -98,11 +104,11 @@ void Peliculas::reporteConCalificacion(double _calificacion)
 void Peliculas::reporteGenero(string _genero)
 {
     int contador = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        if(arrPtrPeliculas[index] -> getGenero() == _genero)
+        if(arrPtrPeliculas[iR] -> getGenero() == _genero)
         {
-            cout << index << ' ' << *arrPtrPeliculas[index];
+            cout << iR << ' ' << *arrPtrPeliculas[iR];
             contador ++;
         }
     }

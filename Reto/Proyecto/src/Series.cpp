@@ -5,10 +5,10 @@
 #include"Episodio.h"
 
 // Constructores
-Series::Series() {}
-
-
-Series::Series(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad) {}
+Series::Series()
+{
+    cantidad = 0;
+}
 
 
 //Setters
@@ -27,11 +27,14 @@ void Series::setCantidadSeries( int _cantidad)
 
 //Getters
 Serie* Series::getPtrSeries(string _Id)
-{
-    for(int index = 0; index < cantidad; index++)
+{   int contador = 0;
+    for(int iR = 0; iR < cantidad; iR++)
     {
-        if(arrPtrSeries[index] -> getId() == _Id)
-            return arrPtrSeries[index];
+        if(arrPtrSeries[iR] -> getId() == _Id){
+            contador = 1;
+            cout << arrPtrSeries[iR] -> str();
+            return arrPtrSeries[iR];
+        }
     }
     return nullptr;
 }
@@ -86,11 +89,10 @@ void Series::leerArchivo()
 void Series::reporteTodasLasSeries()
 {
     double acumulado = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        acumulado = acumulado + arrPtrSeries[index] -> getCalificacion();
-        cout<<index << "-" << * arrPtrSeries[index] << endl;
-
+        acumulado = acumulado + arrPtrSeries[iR] -> getCalificacion();
+        cout<< iR << "-" << '*' <<  arrPtrSeries[iR] -> str() << endl;
     }
     if (cantidad > 0)
         cout << "Promedio Series:" << acumulado / cantidad << endl;
@@ -102,11 +104,11 @@ void Series::reporteTodasLasSeries()
 void Series::reporteConCalificacion(double _calificacion)
 {
     int contador = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR= 0; iR < cantidad; iR ++)
     {
-        if(arrPtrSeries[index] -> getCalificacion() == _calificacion)
+        if(arrPtrSeries[iR] -> getCalificacion() == _calificacion)
         {
-            cout << arrPtrSeries[index] -> str() << endl;
+            cout << arrPtrSeries[iR] -> str() << endl;
             contador ++;
         }
     }
@@ -118,11 +120,11 @@ void Series::reporteConCalificacion(double _calificacion)
 void Series::reporteGenero(string _genero)
 {
     int count = 0;
-    for(int index = 0; index < cantidad; index ++)
+    for(int iR = 0; iR < cantidad; iR ++)
     {
-        if(arrPtrSeries[index] -> getGenero() == _genero)
+        if(arrPtrSeries[iR] -> getGenero() == _genero)
         {
-            cout << '*' << * arrPtrSeries[index] << endl;
+            cout << '*' << * arrPtrSeries[iR] << endl;
             count ++;
         }
     }
@@ -133,6 +135,6 @@ void Series::reporteGenero(string _genero)
 
 void Series::calcularCalificacionSeries()
 {
-    for(int index = 0; index < cantidad; index ++)
-        arrPtrSeries[index] -> setCalificacion(arrPtrSeries[index] -> calculaCalPromedio());
+    for(int iR = 0; iR < cantidad; iR ++)
+        arrPtrSeries[iR] -> setCalificacion(arrPtrSeries[iR] -> calculaCalPromedio());
 }

@@ -3,6 +3,7 @@
 #include"Pelicula.h"
 
 const int  MAX_PEL = 50; // constante
+
 class Peliculas
 {
 
@@ -14,7 +15,6 @@ private://Atributos
 public:// Metodos
     //Constructores
     Peliculas();
-    Peliculas(string _iD, string _titulo, int _duracion,string _genero, double _calificacionPromedio, int _oscares);
 
 
     //Setters
