@@ -16,12 +16,17 @@ En este avance hicimos la clase peliculas y usamos los pointers
 # Casos de prueba del avance 2:
 
 Primer Test:
+
 En este caso nuestro test nos pide hacer un reporte de todas las peliculas y sacar la calificacion promedio
-![image](https://user-images.githubusercontent.com/93608793/172986817-96e0d250-b36e-42d5-8334-6f0aa7347c02.png)
-![image](https://user-images.githubusercontent.com/93608793/173406894-065c1892-7d31-40ed-8e80-ecd9abeb4847.png)
+
+![image](https://user-images.githubusercontent.com/93608793/173409327-0b292679-4652-4163-a1d5-61db6ecba3f9.png)
+![image](https://user-images.githubusercontent.com/93608793/173409372-d0724abb-0878-44e9-b0a7-a39ff4e39219.png)
+
 
 Segundo Test:
+
 En este caso ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion
+![image](https://user-images.githubusercontent.com/93608793/173409683-8733510c-e43e-400d-a7b6-aa46dc8e8628.png)
 
 
 Tercer test(cuarto en el archivo):
@@ -37,12 +42,17 @@ En este último avance hicismos la clase serie,que usa arrays de episodio, sobre
 # Casos de prueba del avance 3:
 
 Primer test:
+
 En este caso nuestro test nos pide hacer un reporte de todas las series y sacar la calificacion promedio
 
-![image](https://user-images.githubusercontent.com/93608793/173407349-7502c921-cbae-433a-ae9e-8ac03cf5306f.png)
+![image](https://user-images.githubusercontent.com/93608793/173409981-eeda113f-0732-4331-b840-0e7de233406f.png)
+![image](https://user-images.githubusercontent.com/93608793/173410056-05f4b7ea-c155-40e1-bc10-bbca041ed3a3.png)
+![image](https://user-images.githubusercontent.com/93608793/173410089-38160362-1db6-4731-903b-bef5d1af1d1b.png)
+
 
 
 Segundo test:
+
 En este caso se nos pide primero que ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion al inicio
 
 ![image](https://user-images.githubusercontent.com/93608793/173407569-428e85ad-d6fd-40c0-885c-4771a4e6da58.png)
