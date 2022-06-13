@@ -32,8 +32,9 @@ Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del me
 
 # Avance 3
 # Diagrama UML
-En este último avance hicismos la clase serie,que usa arrays de episodio, sobrecarga y con este acabamos el avance
+En este último avance hicimos la clase serie,que usa arrays de episodio, sobrecarga y con este acabamos el avance
 ![image](https://user-images.githubusercontent.com/93608793/172985990-80b0c1ee-e6e2-4eea-8e9b-84506e54a2fd.png)
+
 # Casos de prueba del avance 3:
 
 Primer test:
