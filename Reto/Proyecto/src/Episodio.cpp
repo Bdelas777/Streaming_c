@@ -8,47 +8,55 @@ Episodio::Episodio()
     calificacion = 7;
 }
 
-Episodio::Episodio(string _titulo,int _temporada,int _calificacion)
+
+Episodio::Episodio(string _titulo, int _temporada, double _calificacion)
 {
     titulo = _titulo;
     temporada = _temporada;
     calificacion = _calificacion;
 }
 
-//setters
+
+//Setters
 void Episodio::setTitulo(string _titulo)
 {
     titulo = _titulo;
 }
+
 
 void Episodio::setTemporada(int _temporada)
 {
     temporada = _temporada;
 }
 
-void Episodio::setCalificacion(int _calificacion)
+
+void Episodio::setCalificacion(double _calificacion)
 {
     calificacion = _calificacion;
 }
 
-//getters
+
+//Getters
 string Episodio::getTitulo()
 {
     return titulo;
 }
+
 
 int Episodio::getTemporada()
 {
     return temporada;
 }
 
-int Episodio::getCalificacion()
+
+double Episodio::getCalificacion()
 {
     return calificacion;
 }
 
+
 //Otros Metodos
-string Episodio::str()
+string Episodio::str() const
 {
-    return  titulo + ","   + to_string(temporada) + ","  + to_string(calificacion);
+    return  titulo + ',' + to_string(temporada) + ','  + to_string(calificacion);
 }

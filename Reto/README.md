@@ -11,17 +11,22 @@ En este avance nos dedicamos definir las clases video,pelicula,serie y episodio
 # Diagrama UML
 En este avance hicimos la clase peliculas y usamos los pointers
 
-![image](https://user-images.githubusercontent.com/93608793/169872454-88fa0ae1-9229-40bb-9f54-ddab24a90cd2.png)
+![image](https://user-images.githubusercontent.com/93608793/172030747-d4e6d31f-8308-4fc3-9ade-c7620dc175fe.png)
 
 # Casos de prueba del avance 2:
 
 Primer Test:
+
 En este caso nuestro test nos pide hacer un reporte de todas las peliculas y sacar la calificacion promedio
-![image](https://user-images.githubusercontent.com/93608793/172986817-96e0d250-b36e-42d5-8334-6f0aa7347c02.png)
-![image](https://user-images.githubusercontent.com/93608793/173406894-065c1892-7d31-40ed-8e80-ecd9abeb4847.png)
+
+![image](https://user-images.githubusercontent.com/93608793/173409327-0b292679-4652-4163-a1d5-61db6ecba3f9.png)
+![image](https://user-images.githubusercontent.com/93608793/173409372-d0724abb-0878-44e9-b0a7-a39ff4e39219.png)
+
 
 Segundo Test:
+
 En este caso ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion
+![image](https://user-images.githubusercontent.com/93608793/173409683-8733510c-e43e-400d-a7b6-aa46dc8e8628.png)
 
 
 Tercer test(cuarto en el archivo):
@@ -38,12 +43,16 @@ En este último avance hicimos la clase serie,que usa arrays de episodio, sobrec
 # Casos de prueba del avance 3:
 
 Primer test:
+
 En este caso nuestro test nos pide hacer un reporte de todas las series y sacar la calificacion promedio
 
-![image](https://user-images.githubusercontent.com/93608793/173407349-7502c921-cbae-433a-ae9e-8ac03cf5306f.png)
+![image](https://user-images.githubusercontent.com/93608793/173409981-eeda113f-0732-4331-b840-0e7de233406f.png)
+![image](https://user-images.githubusercontent.com/93608793/173410056-05f4b7ea-c155-40e1-bc10-bbca041ed3a3.png)
+![image](https://user-images.githubusercontent.com/93608793/173410089-38160362-1db6-4731-903b-bef5d1af1d1b.png)
 
 
-Segundo test y Tercer test:
+
+
 En este caso se nos pide primero que ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion al inicio
 De ahi se nos pide que en este caso le damos un determinado genero y nos devuelve las peliculas con determinado genero:
 Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del metodo
@@ -58,6 +67,7 @@ Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del me
 
 
 Cuarto test:
+
 Ahora nos pide calcular la calificacion de todas las series y de ahi imprimer el reporte de todas las series
 
 
@@ -67,6 +77,7 @@ Ahora nos pide calcular la calificacion de todas las series y de ahi imprimer el
 
 
 Quinto test:
+
 En este caso calcular la calificacion de todas las series, de ahi os pide primero que ingresamos una calificacion,el codigo nos devuelve la pelicula con esa calificacion al inicio y pones una opcion incorrecta.
 
 ![image](https://user-images.githubusercontent.com/93608793/173408170-15599b08-6902-4b0e-9665-cac607c9eabc.png)

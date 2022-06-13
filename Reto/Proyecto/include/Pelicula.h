@@ -4,25 +4,32 @@
 using namespace std;
 #include "Video.h"
 
-
 class Pelicula : public Video
 {
-private:
+
+private://Atributos
     int oscares;
 
-public:
+
+public://Metodos
     //Constructores
     Pelicula();
-    Pelicula(string, string, int, string, double,int _oscares);
+    Pelicula(string, string, int, string, double, int _oscares);
 
-    //setters
+
+    //Setters
     void setOscares(int _oscares);
 
-    //getters
+
+    //Getters
     int getOscares();
+
 
     //Otros Metodos
     string str();
+
+    //Sobrecarga de metodo
+    friend ostream &operator << (ostream &out, const Pelicula &peli);
 
 };
 

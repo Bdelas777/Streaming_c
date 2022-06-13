@@ -4,27 +4,34 @@
 #include "Video.h"
 class Serie:public Video
 {
-private:
+private://Atributos
     Episodio episodio[5];
     int cantidad;
 
-public:
 
+public://Metodos
     //Constructores
     Serie();
-    Serie(string, string, int, string, double);
+    Serie(string, string, int, string, double, int);
 
-    //setters
+
+    //Setters
     void setEpisodio(int _index, Episodio _episodio);
     void setCantidad(int _cantidad);
+
 
     //Getters
     Episodio getEpisodio(int _index);
     int getCantidad();
 
+
     //Otros Metodos
     double calculaCalPromedio();
     string str();
+
+
+    //Sobrecarga de metodo
+    friend ostream &operator<<(ostream &out, const Serie &serie);
 };
 
 #endif // SERIE_H

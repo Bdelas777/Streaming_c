@@ -6,26 +6,31 @@ using namespace std;
 class Episodio
 {
 protected:
+    //Atributos
     string titulo;
     int temporada;
-    int calificacion;
+    double calificacion;
 
 public:
+    //Metodos
     Episodio();
-    Episodio(string titulo,int _temporada,int _calificacion);
+    Episodio(string _titulo, int _temporada, double _calificacion);
 
-    //setters
+
+    //Setters
     void setTitulo(string _titulo);
     void setTemporada(int _temporada);
-    void setCalificacion(int _calificacion);
+    void setCalificacion(double _calificacion);
 
-    //getters
+
+    //Getters
     string getTitulo();
     int getTemporada();
-    int getCalificacion();
+    double getCalificacion();
+
 
     //Otros Metodos
-    string str();
+    string str() const;
 
 };
 
