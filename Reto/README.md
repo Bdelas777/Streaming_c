@@ -37,8 +37,9 @@ Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del me
 
 # Avance 3
 # Diagrama UML
-En este último avance hicismos la clase serie,que usa arrays de episodio, sobrecarga y con este acabamos el avance
+En este último avance hicimos la clase serie,que usa arrays de episodio, sobrecarga y con este acabamos el avance
 ![image](https://user-images.githubusercontent.com/93608793/172985990-80b0c1ee-e6e2-4eea-8e9b-84506e54a2fd.png)
+
 # Casos de prueba del avance 3:
 
 Primer test:
@@ -51,20 +52,19 @@ En este caso nuestro test nos pide hacer un reporte de todas las series y sacar 
 
 
 
-Segundo test:
 
 En este caso se nos pide primero que ingresamos una calificacion y el codigo nos devuelve la pelicula con esa calificacion al inicio
+De ahi se nos pide que en este caso le damos un determinado genero y nos devuelve las peliculas con determinado genero:
+Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del metodo
+
 
 ![image](https://user-images.githubusercontent.com/93608793/173407569-428e85ad-d6fd-40c0-885c-4771a4e6da58.png)
 ![image](https://user-images.githubusercontent.com/93608793/173407617-16c29a51-92e1-4bae-a1c9-e86f9bca0d55.png)
 
-Tercer test
 
-De ahi se nos pide que en este caso le damos un determinado genero y nos devuelve las peliculas con determinado genero:
-Nota: En este caso se muestran numeros de inicio porque se uso sobrecarga del metodo
 
-![image](https://user-images.githubusercontent.com/93608793/172988228-c81bb406-aa23-4f96-99ed-9559b36c9990.png)
-![image](https://user-images.githubusercontent.com/93608793/172988251-87a56fa2-9e71-4bb3-9f54-dd707b6c4b7b.png)
+
+
 
 Cuarto test:
 
