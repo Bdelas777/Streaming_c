@@ -1,5 +1,11 @@
 # Nombre: Bernardo de la Sierra Rábago
 # Matricula : A01735821
+
+# Diagrama UML Final:
+
+![image](https://user-images.githubusercontent.com/93608793/174148362-b5d8a022-f014-405f-99e1-445c87e766e1.png)
+
+
 # Avance 1
 # Diagrama UML
 En este avance nos dedicamos definir las clases video,pelicula,serie y episodio
