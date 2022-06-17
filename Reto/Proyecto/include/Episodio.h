@@ -32,6 +32,10 @@ public:
     //Otros Metodos
     string str() const;
 
+
+    //Sobrecarga de metodo
+    friend ostream &operator<<(ostream &out, const Episodio &episodio);
+
 };
 
 #endif // EPISODIO_H

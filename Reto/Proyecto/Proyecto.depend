@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1655139765 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\episodio.cpp
+1655435290 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\episodio.cpp
 	"Episodio.h"
 
-1655139765 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
+1655435214 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\episodio.h
 	<iostream>
 
 1655139765 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\pelicula.cpp
@@ -12,7 +12,7 @@
 	<iostream>
 	"Video.h"
 
-1655053812 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
+1655435152 c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\include\video.h
 	<stdio.h>
 	<string>
 	<iostream>
@@ -20,7 +20,7 @@
 1655139765 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\serie.cpp
 	"Serie.h"
 
-1655139765 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
+1655435134 source:c:\users\6qv46la\onedrive\documentos\github\tc1030_302_de_la_sierra_bernardo\reto\proyecto\src\video.cpp
 	"Video.h"
 	<string>
 
