@@ -60,3 +60,10 @@ string Episodio::str() const
 {
     return  titulo + ',' + to_string(temporada) + ','  + to_string(calificacion);
 }
+
+//Sobrecarga de metodo
+ostream &operator << (ostream &out, const Episodio &episodio)
+{
+    out << episodio.titulo << ',' << episodio.temporada << ',' << episodio.calificacion << endl;
+    return out;
+}

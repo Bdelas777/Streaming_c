@@ -40,6 +40,11 @@ public://Metodos
     //Otros Metodos
     virtual string str();
 
+
+    //Sobrecarga de metodo
+    friend ostream &operator<<(ostream &out, const Video &video);
+
+
 };
 
 #endif // VIDEO_H

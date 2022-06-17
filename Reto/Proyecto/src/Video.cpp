@@ -90,3 +90,13 @@ string Video::str()
 {
     return  iD + ',' + titulo + ','  + to_string(duracion) + ',' + genero + ','  + to_string(calificacionPromedio);
 }
+
+
+//Sobrecarga de metodo
+ostream &operator << (ostream &out, const  Video &video)
+{
+
+    out << video.iD << "," << video.titulo << ","  << video.duracion << ","  << video.genero << ","  <<
+        video.calificacionPromedio << endl;
+    return out;
+}
